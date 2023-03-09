@@ -4,7 +4,7 @@ import Form from 'react-bootstrap/Form';
 
 
 
-export const SalaryForm = ({handleFormError, handleFormSuccess}) => {
+export const SalaryForm = ({handleFormError, handleFormSuccess, handleCalculation}) => {
     const [taxYear, setTaxYear] = useState("2021-2022");
     const [grossSalary, setGrossSalary] = useState(30000);
 
@@ -13,7 +13,7 @@ export const SalaryForm = ({handleFormError, handleFormSuccess}) => {
 
         if (grossSalary && grossSalary > 0) {
             handleFormSuccess();
-            console.log(taxYear, grossSalary);
+            handleCalculation(taxYear, grossSalary);
             //handle calculations
         } else {
             handleFormError ()
