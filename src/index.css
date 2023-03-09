@@ -1,0 +1,19 @@
+.jumbotron {
+    text-align: center;
+    padding: 2rem 1rem;
+    color: var(--white);
+    margin-bottom: 20px;
+  }
+
+  .title {
+    text-align: center;
+    color: var(--ocean-blue);
+    font-size: 45px;
+    margin-bottom: 15px;
+  }
+  
+  .sub-title {
+    font-size: 24px;
+    font-weight: 200;
+    letter-spacing: 0.01em;
+  }
